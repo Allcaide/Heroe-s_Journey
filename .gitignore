@@ -8,7 +8,13 @@ node_modules/
 dist/
 web-build/
 expo-env.d.ts
-
+.agents/
+.claude/
+skills-lock.json
+.vscode/
+node_modules/
+package-lock.json
+representative_photos/
 # Native
 .kotlin/
 *.orig.*
