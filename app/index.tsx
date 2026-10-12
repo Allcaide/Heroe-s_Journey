@@ -2,8 +2,8 @@ import { Text, View,  StyleSheet } from 'react-native';
 
 export default function Index() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Home screen</Text>
+    <View className="flex-1 justify-center items-center">
+      <Text className="text-xl text-indigo-600 text-center mt-90">Home screen</Text>
     </View>
   );
 }

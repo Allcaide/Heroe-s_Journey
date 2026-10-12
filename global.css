@@ -1,0 +1,67 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css";
+
+@import "nativewind/theme";
+
+@import "./theme/colors.css";
+@import "./theme/typography.css";
+@import "./theme/shape.css";
+
+/* Layout */
+@utility screen {
+  @apply flex-1 bg-background;
+}
+
+@utility card {
+  @apply rounded-card border border-border bg-card shadow-card;
+}
+
+/* Card with a leading icon, text and a trailing chevron (e.g. "Adicionar alimento", "Café da manhã"). */
+@utility card-row {
+  @apply card flex-row items-center gap-4 p-4;
+}
+
+@utility icon-tile {
+  @apply size-12 items-center justify-center rounded-full bg-surface;
+}
+
+@utility icon-tile-primary {
+  @apply icon-tile bg-primary/15;
+}
+
+/* Buttons: the label needs its own colour, e.g. btn-label text-white on btn-primary. */
+@utility btn {
+  @apply h-12 flex-row items-center justify-center gap-2 rounded-full px-6;
+}
+
+@utility btn-label {
+  @apply font-poppins-medium;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+@utility btn-primary {
+  @apply btn bg-primary active:opacity-90;
+}
+
+@utility btn-secondary {
+  @apply btn border border-border bg-card active:opacity-90;
+}
+
+@utility btn-inactive {
+  @apply btn bg-ink dark:bg-surface;
+}
+
+@utility btn-disabled {
+  @apply btn border border-border bg-surface;
+}
+
+/* Macro bars (Gorduras, Fibras): set the fill width inline. */
+@utility progress-track {
+  @apply h-1.5 overflow-hidden rounded-full bg-border;
+}
+
+@utility progress-fill {
+  @apply h-full rounded-full bg-foreground;
+}

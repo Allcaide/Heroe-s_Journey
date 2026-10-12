@@ -23,7 +23,9 @@ representative_photos/
 *.p12
 *.key
 *.mobileprovision
-
+prompts/
+.prompt.md/
+prompt_material_general/
 # Metro
 .metro-health-check*
 

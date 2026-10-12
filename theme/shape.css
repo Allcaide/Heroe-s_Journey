@@ -1,0 +1,8 @@
+/* Design tokens: radius and shadow (design system sheet, "COMPONENTES DE UI"). */
+
+@theme {
+  --radius-card: 16px;
+  --radius-bar: 24px;
+
+  --shadow-card: 0 2px 8px 0 rgb(17 19 24 / 0.04);
+}
